@@ -25,7 +25,7 @@ import java.util.Scanner;
 	            int minutosTotalesUsuario = 0;
 	            int diasMasDe60 = 0;
 	
-	            for (int dia = 1; dia <= diasAsistencia; dia++) {
+	            for (int dia = 1; dia <= diasAsistencia; dia=dia+1) {
 	                System.out.print("Minutos realizados el día " + dia + ": ");
 	                int minutos = teclado.nextInt();
 	
@@ -55,8 +55,8 @@ import java.util.Scanner;
 	                System.out.println("No ha alcanzado el objetivo semanal.");
 	            }
 	
-	            minutosTotalesTodos += minutosTotalesUsuario;
-	            diasTotalesTodos += diasAsistencia;
+	            	minutosTotalesTodos += minutosTotalesUsuario;
+	            	diasTotalesTodos += diasAsistencia;
 	
 	            if (minutosTotalesUsuario > maximoMinutos) {
 	                maximoMinutos = minutosTotalesUsuario;
